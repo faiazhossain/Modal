@@ -1,0 +1,31 @@
+What is modal?
+Modal is something
+
+To select all of the same class / id we have to use querySelectorAll('.show-modal');
+
+to remove a class we have to select the class we want to remove.
+
+    modal.classList.remove('hidden'); // we can not use .hidden we can only use . in the selector like querySelector
+
+if we find reapeated code then we should separate the function.
+and in the time of calling that we have to do this:
+
+  modal.addEventListener('click', closeModal); ✅✅✅
+
+we can't do this
+
+ modal.addEventListener('click', closeModal()); ❌❌❌
+
+########## Key press event  #############
+escape key to remove modal.
+
+there are 3 events on keyboard.
+    1.key up \\if we lift finger from keyboard this event occurs
+    2.key down \\if we press the key down this event occurs
+    3.key press \\ this will work id we keep our finger on a certain key.
+
+document.addEventListener('keydown',function(){
+  console.log('A key was pressed'); 
+})
+
+but we want to do this only with the escape key.
